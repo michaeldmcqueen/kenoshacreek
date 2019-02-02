@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		{% seo %}
+		{% feed_meta %}
+		<link rel="stylesheet" href="https://use.typekit.net/zsz2isz.css">
+
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
+
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+			<script>
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', '{{ site.google_analytics_key }}', 'auto');
+				ga('send', 'pageview');
+			</script>
+			
+			<script async src='https://www.google-analytics.com/analytics.js'></script>
+			{% endif %}
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="img-zero"><a href="https://imaginezerosuicide.org/" target="_blank"><img src="{{ site.baseurl }}/images/imagine-zero.png" alt="Imagine Zero Suicide" width="117"></a></div>
+			<div class="shatter-logo"><a href="{{ site.baseurl }}/">Shattering The Silence</a></div>
+				{% include navigation.html %}
+		</header>
+
+		{{ content }}
+
+		<footer class="site-footer">
+			<div class="footer-line">
+				<p class="copy">&copy;{{ site.time | date: '%Y' }} Imagine Zero</p>
+				<p class="site-by"><a href="https://harrierdesigncompany.com" target="_blank">Website by Harrier Design Company</a></p>
+			</div>
+		</footer>
+		<script  src='{{ site.baseurl }}/js/site.js'></script>
+	</body>
+</html>

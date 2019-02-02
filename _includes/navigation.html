@@ -1,0 +1,20 @@
+<div id="open-nav" class="site-navigation--toggle">
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+<nav class="site-navigation">
+	<ul class="nm">
+		{% for link in site.data.navigation.links %}
+			{% assign class = "" %}
+			{% if link.highlight %}
+				{% assign class = class | append: " highlight" %}
+			{% endif %}
+			{% if link.link == page.url %}
+				{% assign class = class | append: " active" %}
+			{% endif %}
+			<li class="site-navigation--item"><a href="{{ site.baseurl }}{{ link.link }}" class="{{ class }} site-navigation--link" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a></li>
+		{% endfor %}
+	</ul>
+</nav>

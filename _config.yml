@@ -1,0 +1,22 @@
+title: Shattering the Silence
+url: "kenoshasecurity.com"
+baseurl:
+google_analytics_key: 
+google_maps_javascript_api_key:
+
+# Default description in social shares for the jekyll-seo-tag gem
+description: 
+
+permalink: pretty
+
+plugins:
+  - "jekyll-feed"
+  - "jekyll-seo-tag"
+  - "jekyll-paginate"
+  - "jekyll-archives"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE

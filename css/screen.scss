@@ -1,0 +1,91 @@
+---
+---
+
+$pattern: "{{ site.baseurl }}/images/pattern.png";
+$screenshot-buttons: "{{ site.baseurl }}/images/screenshot-buttons.svg";
+
+
+$brand-color: #FFC832;
+$light: #FFF7D4;
+$white: #FFF;
+$dark: #1C1C1C;
+$yellow: #FFC832;
+$red: #FF8B6F;
+$orange: #F47C20;
+$blue: #4360A8;
+$light-blue: #3CC6ED;
+$html-background-color: #fff;
+$secondary-brand-color: #FFC461;
+$middle-gradient-color: mix($brand-color, $secondary-brand-color, 95%);
+$font: 'neusa-next-std', sans-serif;
+$alt-font: 'hwt-gothic-round', sans-serif;
+$mono: 'IBM Plex Mono', monospace;
+
+// Breakpoints
+$tablet: "(min-width: 450px)";
+
+
+$mid-point: "(min-width: 620px)";
+$desktop: "(min-width: 768px)";
+
+$small: "(min-width: 450px)";
+$medium: "(min-width: 620px)";
+$medium-down: "(max-width: 620px)";
+$large: "(min-width: 768px)";
+$large-down: "(max-width: 768px)";
+$mlarge: "(min-width: 992px)";
+$xlarge: "(min-width: 1200px)";
+
+// Home Animation
+$col: 16.6666666667%;
+$row: 25%;
+
+@mixin move1 {
+  width: $col * 6 ;
+  left: 15px;
+  height: $row * 4;
+  top: 15px;
+}
+@mixin move2 {
+  width: $col * 2;
+  height: $row * 3;
+  left: calc((#{$col} * 2) + 15px);
+  top: calc($row + 15px);
+}
+@mixin move3 {
+  width: $col * 4;
+  height: $row * 3;
+  left: calc((#{$col} * 2) + 15px);
+  top: 15px;
+}
+@mixin move4 {
+  width: $col * 2;
+  height: $row * 3;
+  left: calc((#{$col} * 4) + 15px);
+  top: calc(#{$row} + 15px);
+}
+
+@mixin move5 {
+  width: $col * 4;
+  left: 15px;
+  height: $row * 2;
+  top: calc(#{$row} + 15px);
+}
+@mixin move6 {
+  width: $col * 2;
+  left: 15px;
+  height: $row * 4;
+  top: 15px;
+}
+
+@import "elements";
+@import "layout";
+@import "home";
+@import "contact";
+@import "programs";
+@import "blog";
+@import "about";
+@import "forms";
+@import "header";
+@import "footer";
+@import "cloudcannon";
