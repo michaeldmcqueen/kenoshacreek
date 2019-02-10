@@ -1,14 +1,17 @@
 .site-footer {
-  background: $blue;
+  background: darken($dark, 10%);
   font-family: $alt-font;
   color: $white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media #{$large} {
+    grid-gap: 2em;
+  }
   .footer-line {
     padding: 1.5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
     @media #{$large} {
       padding: 1.5rem  3rem;
-      grid-gap: 2em;
     }
     @media #{$xlarge} {
       padding: 1.5rem 4rem;
@@ -20,13 +23,6 @@
         border-bottom: 1px dotted;
         color: inherit;
       }
-    }
-    .copy {
-      color: $white;
-    }
-    .site-by {
-      text-align: right;
-
     }
     p {
       margin: 0;
