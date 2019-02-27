@@ -66,6 +66,15 @@
   .services-overview--grid-icon {
     text-align: center;
     padding-bottom: 2rem;
+    max-width: 50px;
+    margin: 0 auto;
+    @media #{$medium} {
+      max-width: 90px;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
   }
   .services-overview--grid {
    
