@@ -1,11 +1,7 @@
 .contact {
-  background: $red;
-  padding: 3rem 1.5rem;
   .contact-form {
-    background: $light;
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem 1.5rem;
   }
 }
 .contact-form {
@@ -14,49 +10,89 @@
   div {
     margin-bottom: 2rem;
   }
+  form {
+    padding: 1.5rem 0;
+  }
   label {
     display: block;
     padding-bottom: .5rem;
     font-size: 1rem;
     font-family: $alt-font;
+    span {
+      font-size: 1rem;
+    font-weight: normal;
+    color: #767777;
+    }
   }
+  label.form-label {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
   input, textarea {
+    font-family: $alt-font;
     display: block;
     width: 100%;
-    border: 1px solid $dark;
+    border: 1px solid #c3c3c3;
     background: #fff;
-    -webkit-appearance: none;
-    padding: 1rem;
-    border-radius: 0;
-    color: #444;
-    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    font-size: 1rem;
+  }
+  .multi-choice input {
+    display: inline-block;
+    width: auto;
+  }
+  .other-text-box {
+    display: none;
+    &.show-box {
+      display: block;
+    }
   }
 
   input.btn {
     display: inline-block;
     font-weight: 700;
-    border-radius: 12px;
-    padding: 17px 40px 13px;
+    border-radius: 4px;
+    padding: 16px 50px 14px 50px;
     margin-bottom: 1rem;
     text-align: center;
     line-height: 1;
     font-family: $alt-font;
-    font-size: 1.4em;
+    font-size: 1.2em;
     position: relative;
     cursor: pointer;
-    background: $blue;
-      color: $white;
-      width: auto;
-      border: 0;
+    width: auto;
+    transition: background .15s ease-in-out;
+    border: 0;
     @media #{$medium} {
-      padding: 22px 50px 18px;
-      margin-bottom: 0;
+      padding: 16px 50px 14px 50px;
+      margin: 0 1rem 0 0px;
     }
     &:hover {
       text-decoration: none;
+      svg {
+        margin-left: 20px;
+      }
     }
- 
- 
+    &.primary {
+      background: $primary;
+      color: $white;
+      &:hover {
+        background: darken($primary, 5%);
+      }
+    }
+    &.secondary {
+      background: $secondary;
+      color: $light;
+      margin-right: 0;
+      &:hover {
+        background: darken($secondary, 5%);
+      }
+    }
+    svg {
+      transition: margin-left .15s ease-in-out;
+      margin-left: 15px;
+    }
   }
 
 }

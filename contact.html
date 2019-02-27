@@ -1,29 +1,32 @@
 ---
-title: Get in Touch
+title: Contact Us
 description: Contact Us
 ---
 
-<section class="contact">
+<section class="contact section-padding light-bg topo-overlay">
 	
 	<div class="contact-form">
 		<h1 class="page-title">{{ page.title }}</h1>
-		<p>Feel free to reach out to us with any questions for the Shattering the Silence event.</p>
+		<p>Please reach out using the form below or give us a call at 970.214.2888 with any questions you have. If you would like a Free Estimate please fill our this form.</p>
 	
 		<form action="{{ site.baseurl }}/contact-success/" method="post">
-			<input type="hidden" name="_to" value="rachel@imaginezerosuicide.org" />
+			<input type="hidden" name="_to" value="michaeldmcqueen@gmail.com" />
 			<input type="text" name="_gotcha" style="display: none;" />
 
 				<div>
-					<label for="name">Your Name</label>
+					<label class="form-label" for="name">Your Name</label>
 					<input type="text" name="your-name" id="your-name" required />
 				</div>
-
 				<div>
-					<label for="email">Email Address</label>
+					<label class="form-label" for="email">Email Address</label>
 					<input type="email" name="email" id="email" required />
 				</div>
 				<div>
-					<label for="message">Message</label>
+						<label class="form-label" for="phone">Phone Number <span>(Optional)</span></label>
+						<input type="tel" name="phone-number" id="phone-number" />
+					</div>
+				<div>
+					<label class="form-label" for="message">Message</label>
 					<textarea name="message" id="message" rows="6"></textarea>
 				</div>
 				<div class="input-btn-wrapper">

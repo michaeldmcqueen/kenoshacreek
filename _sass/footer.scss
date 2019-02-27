@@ -1,31 +1,40 @@
 .site-footer {
   background: darken($dark, 10%);
-  font-family: $alt-font;
   color: $white;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  @media #{$large} {
+  .site-footer-grid {
+  padding: 2rem 1rem;
+  font-family: $font;
+  @media #{$medium} {
     grid-gap: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+  p {
+    margin: 0 0 5px;
+  }
+  h6 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+}
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  color: inherit;
+  &:hover {
+    border-bottom: 1px dotted $primary;
+  }
+}
   .footer-line {
-    padding: 1.5rem;
-
-    @media #{$large} {
-      padding: 1.5rem  3rem;
-    }
-    @media #{$xlarge} {
-      padding: 1.5rem 4rem;
+    padding-top: 1rem;
+    @media #{$medium} {
+      text-align: right;
+      padding-top: 0;
+      align-self: end;
     }
     .site-by {
       color: $white;
-      a {
-        text-decoration: none;
-        border-bottom: 1px dotted;
-        color: inherit;
-      }
-    }
-    p {
-      margin: 0;
+
     }
   }
 }

@@ -1,3 +1,42 @@
+.intro {
+  padding: 1.5rem;
+  position: relative;
+  .intro--text {
+    padding-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+}
+
+h1.page-title {
+  font-size:2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  @media #{$medium} {
+    font-size: 2.5rem;
+  }
+  @media #{$xlarge} {
+    font-size: 3rem;
+  }
+}
+h2.sub-title {
+  font-size:1.5rem;
+  font-family: $font;
+  font-weight: 300;
+  @media #{$medium} {
+    font-size: 1.6rem;
+  }
+}
+
+
+.about-grid {
+  @media #{$medium} {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
 .about-us {
   padding: 2.5rem 1.5rem;
   position: relative;

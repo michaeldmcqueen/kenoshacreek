@@ -1,24 +1,56 @@
 .intro {
   padding: 1.5rem;
+  position: relative;
+  &.home {
+    padding: 11rem 1.5rem 3rem;
+    @media #{$medium} {
+      padding: 14rem 1.5rem 3rem;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      background-image: url('/images/mountain-valley.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.7;
+    }
+  }
   .intro--text {
     padding-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+    @media #{$large} {
+      width: 90%;
+    }
+    @media #{$xlarge} {
+      width: 75%;
+    }
   }
   h1.page-title {
     font-size:2rem;
     color: $white;
     font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
     @media #{$medium} {
       font-size: 2.5rem;
     }
     @media #{$xlarge} {
-      font-size: 3.2rem;
+      font-size: 3rem;
     }
   }
   h2.sub-title {
-    font-size:2rem;
+    font-size:1.5rem;
     color: $white;
     font-family: $font;
     font-weight: 300;
+    @media #{$medium} {
+      font-size: 2rem;
+    }
   }
 }
 .home.intro {
@@ -31,11 +63,80 @@
 
 // Services Overview
 .services-overview {
+  .services-overview--grid-icon {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  .services-overview--grid {
+   
+    @media #{$medium} {
+      grid-gap: 4rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-gap: 2rem;
+    }
+  }
+  .services-overview--grid-content {
+    h6 {
+      font-size: 1.4rem;
+      margin: 2rem 0 1.5rem;
+    }
+  }
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    
+    @media #{$large} {
+      grid-column-gap: 2rem;
+      font-size: 1.2rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    li {
+      padding-bottom: .35rem;
+      line-height: 1.3;
+    }
+    .services-link {
+      //align-self: center;
+      grid-column: 1/4;
+      @media #{$large} { 
+        grid-column:auto;
+      }
+    }
+  }
   h3 {
     font-weight: 700;
   }
   h4 {
     font-family: $font;
     font-weight: 300;
+  }
+}
+
+// About Overview
+.about-overview {
+  .container {
+    position: relative;
+  }
+}
+.about-overview--content {
+  font-size: 1.2rem;
+  @media #{$medium} {
+    float: left;
+    width: 50%;
+  }
+}
+.about-overview--image {
+  @media #{$medium} {
+    float: right;
+    right: 0;
+    top: 0;
+    width: 48%;
+  }
+  @media #{$mlarge} {
+    top: -100%;
+    width: 40%;
+    position: absolute;
+
   }
 }

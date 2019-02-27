@@ -1,0 +1,53 @@
+---
+title: Get a Free Estimate
+description: Get a Free Estimate
+---
+
+<section class="contact section-padding light-bg topo-overlay">
+
+  <div class="contact-form">
+    <h1 class="page-title">{{ page.title }}</h1>
+    <p>Fill out the form below to request a free estimate.</p>
+
+    <form action="{{ site.baseurl }}/contact-success/" method="post">
+      <input type="hidden" name="_to" value="michaeldmcqueen@gmail.com" />
+      <input type="text" name="_gotcha" style="display: none;" />
+      <div>
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" name="your-name" id="your-name" required />
+      </div>
+      <div>
+        <label for="location" class="form-label">Location <span>(Example Crystal Lakes, Glacier View etc)</span></label>
+        <input type="text" name="location" id="location" required />
+      </div>
+      <div>
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div>
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="tel" name="phone-number" id="phone-number" requried />
+      </div>
+      <div>
+        <label class="form-label" >Services Interested in:</label>
+        <div class="multi-choice">
+          <label><input type="checkbox" name="absentee-care" value="Absentee Residential Care">Absentee Residential Care</label>
+          <label><input type="checkbox" name="property-care" value="Property and Security Checks">Property and Security Checks</label>
+          <label><input type="checkbox" name="interior-exterior-care" value="Interior & Exterior Care">Interior & Exterior Care</label>
+          <label><input type="checkbox" name="site-photos" value="On-Site Digital Photos">On-Site Digital Photos</label>
+          <label><input type="checkbox" id="other" name="other" value="Other">Other</label>
+          <div class="other-text-box">
+              <input type="text" name="other-text" id="other-text" placeholder="Other Service" />
+            </div>
+        </div>
+      </div>
+      <div>
+        <label for="notes" class="form-label">Additional Notes or Message</label>
+        <textarea name="notes" id="notes" rows="6"></textarea>
+      </div>
+      <div class="input-btn-wrapper">
+        <input type="submit" value="Get Estimate" class="btn submit-btn primary" />
+      </div>
+    </form>
+  </div>
+</section>

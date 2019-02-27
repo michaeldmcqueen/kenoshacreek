@@ -18,7 +18,7 @@ $light-blue: #3CC6ED;
 $html-background-color: #fff;
 $secondary-brand-color: #FFC461;
 $font: 'IBM Plex Serif', serif;
-$alt-font: 'IBM Plex Sans Condensed', sans-serif;
+$alt-font: 'Work Sans', sans-serif;
 
 // Breakpoints
 $container: 1200px;
@@ -30,6 +30,7 @@ $medium: "(min-width: 620px)";
 $medium-down: "(max-width: 620px)";
 $large: "(min-width: 768px)";
 $large-down: "(max-width: 768px)";
+$mlarge-down: "(max-width: 992px)";
 $mlarge: "(min-width: 992px)";
 $xlarge: "(min-width: 1200px)";
 
@@ -38,6 +39,7 @@ $xlarge: "(min-width: 1200px)";
 @import "home";
 @import "contact";
 @import "about";
+@import "services";
 @import "forms";
 @import "header";
 @import "footer";

@@ -1,7 +1,9 @@
 links:
 - name: Services
   link: /services/
-- name: About Us
-  link: /about-us/
+- name: About
+  link: /about/
 - name: Contact
   link: /contact/
+- name: Get a Free Estimate
+  link: /free-estimate/

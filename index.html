@@ -17,23 +17,27 @@ description: Mountain property management with a personal touch.
 <section class="services-overview section-padding light-bg topo-overlay">
 		<div class="container">
 			<div class="services-overview--grid">
-				<div class="services-overview--grid-icon"></div>
+				<div class="services-overview--grid-icon">{% include badge.html %}</div>
 				<div class="services-overview--grid-content">
 					<h3 class="editable">We provide full property security checks inside and outside your home, as well as the surrounding property. Something special you need? Just ask!</h3>
 					<h4 class="editable">Serving Red Feather Lakes, Crystal Lakes, Glacier View, Poudre Canyon, and Northern Colorado.</h4>
 					<h6 class="editable">Services Overview</h6>
-					<ul class="services-list editable">
-						<li>Absentee Residential Care</li>
-						<li><a>Property and Security Checks</a></li>
-						<li>Interior & Exterior Care</li>
-						<li>Vacation Renal Management</li>
-						<li>On-Site Digital Photos</li>
-						<li>Monthly Reports</li>
-						<li>Free estimates</li>
-						<li>Competitive Pricing</li>
-						<li class="services-link">
-							<a href="/services" class="btn primary" title="View All Services">All Services {% include arrow.html %}</a>
-						</li>
+					<div class="services-list">
+						<ul class="editable">
+							<li>Absentee Residential Care</li>
+							<li>Property and Security Checks</li>
+							<li>Interior & Exterior Care</li>
+							<li>Vacation Renal Management</li>
+						</ul>
+						<ul class="editable">
+							<li>On-Site Digital Photos</li>
+							<li>Monthly Reports</li>
+							<li>Free estimates</li>
+							<li>Competitive Pricing</li>
+						</ul>
+						<div class="services-link">
+							<a href="/services" class="btn primary small" title="View All Services">All Services {% include arrow.html %}</a>
+						</div>
 					</ul>
 				</div>
 			</div>
@@ -41,9 +45,15 @@ description: Mountain property management with a personal touch.
 </section>
 
 <section class="about-overview section-padding secondary-bg">
-		<div class="container">
+	<div class="container clearfix">
+		<div class="about-overview--content">
 			<h4 class="editable primary-color">Meet the Owner</h4>
-			<p class="editable white-color"><strong>My name is Barb Bowman.</strong></p>
-			<p class="editable white-color">I've lived in the Glacier View/Red Feather Lakes area for over thirteen years and in Colorado for 40 years. I've enjoyed working, riding and fishing in the mountains. </p>
+			<p class="editable white-color"><strong>My name is Barb Bowman.</strong><br>I've lived in the Glacier View/Red Feather Lakes area for over thirteen years and in Colorado for 40 years. I've enjoyed working, riding and fishing in the mountains. </p>
+			<a href="/about" class="btn primary small" title="About">Read More {% include arrow.html %}</a>
 		</div>
+		<div class="about-overview--image">
+			<img alt="Barb Bowman with Horse" src="/images/barb-bowman.png" />
+		</div>
+	</div>
+
 </section>
