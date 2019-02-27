@@ -12,7 +12,11 @@
     }
   }
 }
-
+.services-checklist-title {
+  text-align: center;
+  padding-bottom: 50px;
+  color: $primary;
+}
 .samples-grid {
   @media #{$medium} {
     display: grid;
@@ -20,6 +24,9 @@
     grid-gap: 2rem;
   }
   .sample-content {
+    h3 {
+      font-size: 1.35rem;
+    }
     li {
       padding: .35rem 0rem .25rem 2rem;
       position: relative;
