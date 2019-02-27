@@ -5,6 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		{% seo %}
 		{% feed_meta %}
+		{% if page.url == '/free-estimate/' %}
+			<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		{% endif %}
+		{% if page.url == '/contact/' %}
+		  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	  {% endif %}
+
+
 		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,700|IBM+Plex+Serif:300,400|Work+Sans:400,700,800" rel="stylesheet">
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -24,7 +32,6 @@
 		{% include header.html %}
 		{{ content }}
 		{% include footer.html %}
-		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src='{{ site.baseurl }}/js/site.js'></script>
 
