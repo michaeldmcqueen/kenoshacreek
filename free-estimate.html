@@ -10,11 +10,11 @@ description: Get a Free Estimate
     <p>Fill out the form below to request a free estimate.</p>
 
     <form action="{{ site.baseurl }}/success/" method="post">
-      <input type="hidden" name="_to" value="michaeldmcqueen@gmail.com" />
+      <input type="hidden" name="_to" value="kenoshacreek@hotmail.com" />
       <input type="text" name="_gotcha" style="display: none;" />
       <div>
         <label for="name" class="form-label">Your Name</label>
-        <input type="text" name="your-name" id="your-name" required />
+        <input type="text" name="name" id="your-name" required />
       </div>
       <div>
         <label for="location" class="form-label">Location <span>(Example Crystal Lakes, Glacier View etc)</span></label>
@@ -31,13 +31,13 @@ description: Get a Free Estimate
       <div>
         <label class="form-label" >Services Interested in:</label>
         <div class="multi-choice">
-          <label><input type="checkbox" name="absentee-care" value="Absentee Residential Care">Absentee Residential Care</label>
-          <label><input type="checkbox" name="property-care" value="Property and Security Checks">Property and Security Checks</label>
-          <label><input type="checkbox" name="interior-exterior-care" value="Interior & Exterior Care">Interior & Exterior Care</label>
-          <label><input type="checkbox" name="site-photos" value="On-Site Digital Photos">On-Site Digital Photos</label>
-          <label><input type="checkbox" id="other" name="other" value="Other">Other</label>
+          <label><input type="checkbox" name="service" value="Absentee Residential Care">Absentee Residential Care</label>
+          <label><input type="checkbox" name="service" value="Property and Security Checks">Property and Security Checks</label>
+          <label><input type="checkbox" name="service" value="Interior & Exterior Care">Interior & Exterior Care</label>
+          <label><input type="checkbox" name="service" value="On-Site Digital Photos">On-Site Digital Photos</label>
+          <label><input type="checkbox" id="other" name="service" value="Other">Other</label>
           <div class="other-text-box">
-              <input type="text" name="other-text" id="other-text" placeholder="Other Service" />
+              <input type="text" name="other-service" id="other-text" placeholder="Other Service" />
             </div>
         </div>
       </div>
