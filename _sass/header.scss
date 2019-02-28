@@ -2,7 +2,8 @@
   display: grid;
   position: relative;
   padding: 0 1rem;
-  background: $primary;
+  background: $light;
+  border-bottom: 1px solid #d0cdc1;
 	@media #{$large} {
     margin: 0 auto;
   }
@@ -14,7 +15,8 @@
   }
 }
 .logo {
-  background: #084F41;
+  //background: #084F41;
+  background: linear-gradient(270deg, #332924 0%, #623514 100%);
   padding: 0.5rem 1rem;
   width:250px;
   margin-left: -1rem;
@@ -53,6 +55,7 @@
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
     background: $dark;
+    
     -webkit-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
     margin-top: 4.1rem;
@@ -74,7 +77,7 @@
         transition: all .4s cubic-bezier(.45,.05,.55,.95);
       }
       a {
-        color: $light;
+        color: $dark;
       }
     }
   }
@@ -83,10 +86,13 @@
       color: $light;
       font-weight: 700;
       text-decoration: none;
-      border-bottom: 2px solid $primary;
+      border-bottom: 2px solid $light;
       transition: all .25s ease-in-out;
+      @media #{$mlarge} {
+        color: $dark;
+      }
       &:hover {
-        border-bottom: 2px solid $light;
+        border-bottom: 2px solid $dark;
       }
     }
   }  
@@ -101,16 +107,21 @@
   &:last-child {
     @media #{$mlarge} {
       padding: 0.4rem 1rem;
-      background: $light;
+      background: $primary;
+      background: darken($light, 15%);
       margin: 1rem 0;
       border-radius: 5px;
       transition: all .3s ease-in-out;
+      color: $light;
       &:hover {
         background: darken($primary, 10%);
         color: $light;
+        a {
+          color: $light;
+        }
       }
       a {
-        color: $primary;
+        color: $dark;
         border: 0 !important;
         transition: all .3s ease-in-out;
         &:hover {
@@ -185,7 +196,7 @@
   position: absolute;
   height: 2px;
   width: 100%;
-  background: $light;
+  background: $dark;
   border-radius: 9px;
   opacity: 1;
   left: 0;
