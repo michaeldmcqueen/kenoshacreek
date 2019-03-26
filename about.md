@@ -13,7 +13,6 @@ If you're looking for Security for your mountain property with a personal touch,
 
 ##### Customer Reviews
 
-I was doing a security check on one of the houses I take care of. This home has radiant heated floors through out the upstairs. When I arrived I could hear an alarm going off in the basement. There was a large bubble in the sheetrock hanging down from the ceiling. It was full of water. I immediately shut the water off and located the correct hose that had sprung a leak. I called our local plumber, who came quickly. He fixed the leak and then I had a construction person come and fix the ceiling dry wall. I had been at this home approximately 5 days earlier. I make frequent checks on homes. The owners who live in another state were very happy with my service. If I hadn’t been there major damage would have occurred and more expense.
+During a routine security check on the interior of one of the many homes I care for in the Red Feather Lakes area I noticed a large bubble filled with water dripping from the ceiling. I was able to quickly determine a pipe had burst. The alarm was going off in the basement but it had not triggered a call to the alarm company. I was able to immediately shut off the water and prevent further damage. In the days that followed I was able to act on the clients behalf and work with the plumber and construction crew to mitigate damage and manage the repairs. The client lived several states away and was grateful for the assistance and ease in which the matter was resolved. I had been to this house only days earlier, if I hadn't checked in major damage would have occurred and more expenses.
 
-When you can’t be there… I can.
-
+**When you can’t be there… I can.**
